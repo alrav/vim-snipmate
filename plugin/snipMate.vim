@@ -57,10 +57,7 @@ let g:snipMate['no_match_completion_feedkeys_chars'] =
 
 " Add default scope aliases, without overriding user settings
 let g:snipMate.scope_aliases = get(g:snipMate, 'scope_aliases', {})
-if exists('g:snipMate_no_default_aliases')
-	echom 'The g:snipMate_no_default_aliases option has been renamed.'
-				\ 'See :h snipMate-options.'
-endif
+
 if (!exists('g:snipMate_no_default_aliases') || !g:snipMate_no_default_aliases)
 			\ && (!exists('g:snipMate.no_default_aliases')
 				\ || !g:snipMate.no_default_aliases)
